@@ -1,0 +1,123 @@
+.container {
+    display:flex;
+  }
+  
+  input[type=text] {
+    width: 220px;
+    box-sizing: border-box;
+    border: 2px solid rebeccapurple;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:rgba(236,236,232);
+  }
+    
+
+  input[type=text]:focus {
+    width: 100%;
+  }
+  
+
+  h4,h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-style: bold;
+    text-align: center;
+  }
+
+  .item{
+    border-radius: 5px;
+    margin: 30px 30px 30px 10px;
+    padding: 20px 30px;
+    height: 80px;
+    min-width: 50%;
+    cursor: move;
+    border : 1px solid black;
+   
+  }
+  
+  
+  .tableitem{
+    border-radius: 5px;
+    margin: 30px 30px 30px 10px;
+    padding: 20px 30px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    border : 1px solid black;
+  }
+  
+  :root {
+    --modal-duration: 1s;
+    --modal-color: #5f395f;
+  }
+  
+  .modal {
+    margin:auto;
+    display: none;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 3px 2px 3px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+  
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: center;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
